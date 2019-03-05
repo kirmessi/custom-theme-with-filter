@@ -176,14 +176,7 @@ require get_template_directory() . '/widget/filter-widget-content.php';
  */
 use Taxonomy\AutoLoader;
 require_once get_template_directory() . "/taxonomy/AutoLoader.php";
-$load = new AutoLoader();
-
-$included_files = get_included_files();
-
-foreach ($included_files as $filename) {
-    echo "$filename\n";
-}
-
+new AutoLoader();
 /**
  * Load post-type file.
  */
